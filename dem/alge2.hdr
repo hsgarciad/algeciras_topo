@@ -1,0 +1,17 @@
+ENVI
+description = {
+alge2.bil}
+samples = 1039
+lines   = 1435
+bands   = 1
+header offset = 0
+file type = ENVI Standard
+data type = 4
+interleave = bsq
+byte order = 0
+map info = {Transverse Mercator, 1, 1, 4754259, 1846803, 6, 6}
+projection info = {3, 6378137, 6356752.314140356, 4, -73, 5000000, 2000000, 0.9992, Transverse Mercator}
+coordinate system string = {PROJCS["MAGNA_SIRGAS_Origen_Nacional",GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101004]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",5000000.0],PARAMETER["False_Northing",2000000.0],PARAMETER["Central_Meridian",-73.0],PARAMETER["Scale_Factor",0.9992],PARAMETER["Latitude_Of_Origin",4.0],UNIT["Meter",1.0]]}
+band names = {
+Band 1}
+data ignore value = -3.40282306073709653e+38

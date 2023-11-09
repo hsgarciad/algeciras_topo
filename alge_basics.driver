@@ -1,0 +1,49 @@
+# Parameters for extracting simple surface metrics
+# Comments are preceeded by the hash symbol
+# Documentation can be found at:  
+# https://lsdtopotools.github.io/LSDTT_documentation/LSDTT_hillslope_metrics.html
+
+
+# These are parameters for the file i/o
+write path: /mnt/e/LSDTopoTools/data/Algeciras/alge2
+read path: /mnt/e/LSDTopoTools/data/Algeciras/dem
+read fname: alge2
+write fname: alge_2
+channel heads fname: NULL
+
+# DEM Preprocessing
+remove_seas: true
+min_slope_for_fill: 0.001
+raster_is_filled: false
+only_check_parameters: false
+
+# Hilltop parameters
+RemoveSteepHilltops: true
+Threshold_Hilltop_Gradient: 0.7
+
+# Hilltop analysis and printing options
+run_HFR_analysis: true
+write_hilltops: true
+write_hilltop_curvature: true
+write_hillslope_gradient: true
+write_hillslope_length: true
+write_hillslope_relief: true
+print_hillslope_traces: true
+
+# Selecting channels and basins
+threshold_contributing_pixels: 2700
+minimum_basin_size_pixels: 5000
+maximum_basin_size_pixels: 500000
+
+# Parameters for surface metrics
+surface_fitting_radius: 30
+write_hillshade: true
+print_slope: true
+print_aspect: true
+print_curvature: true
+print_tangential_curvature: true
+print_channels_to_csv: true
+
+# Basic parameters for chi
+A_0: 1
+m_over_n: 0.5

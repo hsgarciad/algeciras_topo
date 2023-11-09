@@ -1,0 +1,30 @@
+# Parameters for extracting channel networks
+# Comments are preceeded by the hash symbol
+# Documentation can be found at:  https://github.com/LSDtopotools/LSDTT_documentation/blob/master/LSDTT_channel_extraction/book/04-threshold-channel-extraction/threshold-channel-extraction.asc
+
+
+
+# These are parameters for the file i/o
+write path: /mnt/e/LSDTopoTools/data/Algeciras/alge2
+read path: /mnt/e/LSDTopoTools/data/Algeciras/dem
+read fname: alge2
+write fname: alge_2
+channel heads fname: NULL
+
+# DEM Preprocessing
+remove_seas: true
+min_slope_for_fill: 0.001
+raster_is_filled: false
+only_check_parameters: false
+
+# Selecting channels and basins
+threshold_contributing_pixels: 2700
+minimum_basin_size_pixels: 5000
+maximum_basin_size_pixels: 500000
+
+# Parameters for printing results
+print_channels_to_csv: true
+
+# Basic parameters for chi
+A_0: 1
+m_over_n: 0.5
